@@ -1,0 +1,52 @@
+.navBarStyles {
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 42px 44px 40px;
+    margin: 0 auto;
+    color: white;
+}
+
+.navLinks {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+
+.navLinks li {
+    font-weight: var(--font-16-400, 400);
+    font-size: var(--font-16-400, 16);
+    color: white;
+}
+
+.authLinks {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.authLinks .login {
+    font-weight: var(--font-16-700, 700);
+    font-size: var(--font-16-700, 16);
+    color: white;
+}
+
+@media (max-width: 1250px) {
+    .navLinks {
+        position: static;
+        transform: none;
+        justify-content: center;
+    }
+    .navBarStyles {
+        flex-wrap: wrap;
+    }
+}
