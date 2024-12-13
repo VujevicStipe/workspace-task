@@ -16,8 +16,8 @@
         align-items: flex-end;
         li {
             text-align: start;
-            font-size: var(--font-14-500, 14);
-            font-weight: var(--font-14-500, 500);
+            font-size: 14px;
+            font-weight: 500;
             opacity: 0.6;
             margin-left: 0px;
             margin-right: 0px;
@@ -27,8 +27,8 @@
             }
         }
         .linkHead {
-            font-size: var(--font-14-500, 14);
-            font-weight: var(--font-14-500, 500);
+            font-size: 14px;
+            font-weight: 500;
             opacity: 1;
             margin-bottom: 20px;
         }
@@ -65,16 +65,16 @@
 }
 
 .footerP {
-    font-size: var(--font-13-400, 13);
-    font-weight: var(--font-13-400, 400);
+    font-size: 13px;
+    font-weight: 400;
     text-align: start;
     line-height: 22px;
     opacity: 0.6;
 }
 
 .footerSpan {
-    font-size: var(--font-14-400, 14);
-    font-weight: var(--font-14-400, 400);
+    font-size: 14;
+    font-weight: 400;
     line-height: 19.6px;
     opacity: 0.6;
 }

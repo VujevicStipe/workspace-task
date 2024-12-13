@@ -25,7 +25,8 @@
   --font-32-600: 32px 600;
   --font-32-400: 32px 400;
   --font-46-600: 46px 600;
-  --font-116-900: 116px 900;
+  --font-116: 116px;
+  --font-weight-900: 900;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,6 +75,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .footerStyles {

@@ -1,8 +1,13 @@
+"use client";
 import styles from "./page.module.css";
+import softStar from "../../public/soft_star.svg";
+import Image from "next/image";
+import useDeviceType from "./hooks/useWindowSize";
 
 export default function Home() {
+  const deviceType = useDeviceType();
   return (
-    <div className={styles.page}>
+    <div className={`${styles.page} ${styles[deviceType]}`}>
       <div className={styles.hero}>
         <div className={styles.heroVideo}>
           <video autoPlay loop muted playsInline>
@@ -12,13 +17,36 @@ export default function Home() {
             />
           </video>
         </div>
+        <div className={styles.heroContent}>
+          <span>Sail your way with</span>
+          <h1>charterag</h1>
+          <p>
+            adventure{" "}
+            <span>
+              {" "}
+              <Image src={softStar} alt="star" />{" "}
+            </span>{" "}
+            relax{" "}
+            <span>
+              {" "}
+              <Image src={softStar} alt="star" />{" "}
+            </span>{" "}
+            explore{" "}
+            <span>
+              {" "}
+              <Image src={softStar} alt="star" />{" "}
+            </span>{" "}
+            fun{" "}
+            <span>
+              {" "}
+              <Image src={softStar} alt="star" />{" "}
+            </span>{" "}
+            dance
+          </p>
+          <div className={styles.shadow}></div>
+        </div>
       </div>
-
-      <div className={styles.heroContent}>
-        <h1 className={styles.heroHeading}>charterag</h1>
-        <p>Your hero subtitle goes here.</p>
-        <button className={styles.heroButton}>Get Started</button>
-      </div>
+      <div className={styles.}></div>
     </div>
   );
 }

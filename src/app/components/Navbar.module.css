@@ -23,8 +23,8 @@
 }
 
 .navLinks li {
-    font-weight: var(--font-16-400, 400);
-    font-size: var(--font-16-400, 16);
+    font-weight: 400;
+    font-size: 16;
     color: white;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .authLinks .login {
-    font-weight: var(--font-16-700, 700);
-    font-size: var(--font-16-700, 16);
+    font-weight: 700;
+    font-size: 16;
     color: white;
 }
 
