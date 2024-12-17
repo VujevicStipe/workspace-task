@@ -1,7 +1,8 @@
 .navBarStyles {
     width: 100%;
     max-width: 1440px;
-    position: relative;
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,7 +1,7 @@
 :root {
 
   /* colors */
-  --background: #ffffff;
+  --background: #ECFBFF;
   --foreground: #171717;
   --blue-color: #062949; 
   --yellow-color: #FFD60A;
@@ -29,7 +29,7 @@
   --font-weight-900: 900;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -44,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background-color: grey;
+  background-color: var(--background);
 }
 
 html,
@@ -69,13 +69,14 @@ li {
   list-style-type: none;
 }
 
-.headerStyle {
+.headerStyles {
   width: 100%;
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
+  position: relative;
 }
 
 .footerStyles {

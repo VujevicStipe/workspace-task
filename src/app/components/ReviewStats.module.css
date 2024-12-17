@@ -1,0 +1,31 @@
+.ReviewStasts {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.ReviewStastsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFF;
+    font-family: Inter;
+
+    & > *:first-child {
+        width: 2.75rem;
+        height: auto;
+    }
+    h2 {
+        font-size: 20.779px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+}

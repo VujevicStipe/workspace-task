@@ -1,0 +1,55 @@
+.SectionTitle {
+    display: flex;
+    max-width: 44rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    margin: 139.5px 0 118.65px 0;
+
+    h2,p {
+        line-height: 120%;
+        font-style: normal;
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+    }
+    h2 {
+        font-size: 46px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.Tag {
+    display: flex;
+    height: 25px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 10px;
+    background: #103C63;
+      
+    span {
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.white {
+    color: white;
+}
+.grey {
+    color: var(--blue-color);
+    .Tag {
+        background: rgba(6, 41, 73, 0.1);
+        span {
+            color: var(--blue-color);
+        }
+    }
+}
+.blue {
+    color: var(--blue-color);
+}

@@ -1,0 +1,42 @@
+.ExperienceSection {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 79px 0 172px 0;
+    background-color: var(--blue-color);
+}
+
+.Reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+    max-width: 1095px;
+    min-width: 14rem;
+    margin-bottom: 81.84px;
+}
+
+@media screen and (max-width: 1170px) {
+    .Reviews {
+        gap: 7rem;
+    }
+}
+
+.ExperinceCardsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7.3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .ExperinceCardsWrapper {
+        max-width: 550px;
+    }
+}

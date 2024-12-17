@@ -5,8 +5,8 @@ import styles from "./Footer.module.css";
 import useDeviceType from "../hooks/useWindowSize";
 import { Open_Sans, Inter } from "@next/font/google";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
-import Logo from "../../../public/logo.svg";
-import scrollBack from "../../../public/scroll_arrow.svg";
+import Logo from "@/public/logo.svg";
+import scrollBack from "@/public/scroll_arrow.svg";
 
 const openSans = Open_Sans({
   subsets: ["latin"],

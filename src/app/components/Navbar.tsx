@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./Navbar.module.css";
 import useDeviceType from "../hooks/useWindowSize";
 import { FaBars } from "react-icons/fa";
-import Logo from "../../../public/logo.svg";
+import Logo from "@/public/logo.svg";
 import Button from "./Button";
 
 export default function Navbar() {

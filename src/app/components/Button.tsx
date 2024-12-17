@@ -1,9 +1,10 @@
+import Image from "next/image";
 import styles from "./Button.module.css";
 import Link from "next/link";
 
 interface ButtonProps {
   variant: "primary" | "secondary" | "tertiary" | "quaternary";
-  color: "white" | "yellow" | "blue";
+  color: "white" | "yellow" | "blue" | "transparent";
   children: React.ReactNode;
   endIcon?: React.ReactNode;
   onClick?: () => void;
@@ -26,7 +27,7 @@ export default function Button({
     return (
         <button className={buttonClasses} onClick={onClick}>
           {children}
-          {endIcon && <span>{endIcon}</span>}
+          {endIcon && <span className={styles.icon}>{endIcon}</span>}
         </button>
       );
 }

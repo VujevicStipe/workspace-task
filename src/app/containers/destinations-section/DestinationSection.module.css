@@ -1,0 +1,29 @@
+.DesinationSeciton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 14px;
+}
+
+.DestinationCardsWrapper {
+    width: 100%;
+    margin-bottom: 13.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+}
+
+.Texture {
+    position: absolute;
+    bottom: 0;
+}
+
+.DesinationSeciton.mobile {
+    .DestinationCardsWrapper {
+        gap: 7.3px;
+    }
+}

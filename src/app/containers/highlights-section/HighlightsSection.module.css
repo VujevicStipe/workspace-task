@@ -1,0 +1,48 @@
+.HightlightsSection {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 33.5px 0 195.14px 0;
+
+    .ImagesWrapper {
+        width: 100%;
+        max-width: 1108px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 13.43px;
+        margin-bottom: 92px;
+
+        & > * {
+            width: 265.18px;
+            height: 241.683px;
+            border-radius: 10px;
+        }
+    }
+    .TripBenefitsWrapper {
+        width: 100%;
+        max-width: 1108px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 71px;
+        color: var(--blue-color);
+    }
+}
+
+@media screen and (max-width: 1130px) {
+     .HightlightsSection {
+        padding-left: 15px;
+        padding-right: 15px;
+        .ImagesWrapper {
+            max-width: 554px;
+        }
+     }
+}

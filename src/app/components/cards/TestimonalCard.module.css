@@ -1,0 +1,45 @@
+.TestimonalCard {
+    display: inline-flex;
+    width: 31.25rem;
+    height: 337px;
+    padding: 42px 76px 42px 30px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 59px 54px 22px 0px rgba(0, 0, 0, 0.00), 38px 34px 21px 0px rgba(0, 0, 0, 0.00), 21px 19px 17px 0px rgba(0, 0, 0, 0.02), 10px 9px 13px 0px rgba(0, 0, 0, 0.03), 2px 2px 7px 0px rgba(0, 0, 0, 0.03);
+
+    .TestimonalCardContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+        text-align: start;
+        font-style: normal;
+        color: var(--blue-color);
+
+        h2 {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 33px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        h3 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.2px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+/* mobile responsive */
+.TestimonalCard.mobile {
+    width: 24rem;
+}

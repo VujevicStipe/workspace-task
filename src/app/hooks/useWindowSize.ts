@@ -41,7 +41,7 @@ const useDeviceType = (): DeviceType => {
     return "mobile";
   }
 
-  if (width >= 1024) {
+  if (width >= 1025) {
     return "desktop";
   } else if (width >= 768) {
     return "tablet";
