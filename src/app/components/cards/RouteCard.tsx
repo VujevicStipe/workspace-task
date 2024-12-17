@@ -32,8 +32,8 @@ export default function RouteCard({
           </div>
         </div>
         <div className={styles.ProgressBarWrapper}>
-          <ProgressBar label="party" value={party} />
-          <ProgressBar label="adventure" value={adventure} />
+          <ProgressBar label="party" value={party} rounded={false} />
+          <ProgressBar label="adventure" value={adventure} rounded={false} />
         </div>
       </div>
       <div className={styles.Shadow}></div>

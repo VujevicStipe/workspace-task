@@ -18,7 +18,7 @@ const inter = Inter({
   weight: ["400"],
 });
 
-export default function Navbar() {
+export default function Footer() {
   const deviceType = useDeviceType();
 
   return (
@@ -93,7 +93,7 @@ export default function Navbar() {
       </div>
       <div className={styles.footerSeparator}></div>
       <div>
-        {/* Open sains */}
+        {/* Open sans */}
         <p className={`${styles.footerP} ${openSans.className}`}>
           Copyright © 2024 Charterag Ltd. (company no. 08245801) <br />
           Lorem ipsum dolor sit amet lorem ipsum ipsum, United Kingdom.

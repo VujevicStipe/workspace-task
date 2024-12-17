@@ -20,7 +20,7 @@ export default function DestinationSection() {
         title="Whether it’s a bash or bliss — the choice is yours"
         details="On our customized sailing adventures, embracing the thrill of our party routes or unwinding on our relaxing voyages — crafting your perfect journey at sea has never been easier"
       />
-      {/* routes 6,35px top margine */}
+      {/* routes 6,35px top margin */}
       <div className={styles.DestinationCardsWrapper}>
         <RouteCard
           image={RouteImg1}

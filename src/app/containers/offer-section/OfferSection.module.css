@@ -4,4 +4,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 239.29px;
+
+    .CardsWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 59.14px;
+    }
+}
+
+.OfferSection.tablet,
+.OfferSection.mobile {
+    padding: 15px;
 }

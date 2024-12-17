@@ -39,3 +39,14 @@
     background-color: #66B8FF;
     height: 100%;
 }
+
+.Rounded {
+    .ProgressBar {
+        width: 100%;
+        max-width: 208px;
+    }
+    .ProgressFill {
+        border-radius: inherit;
+        background-color: #1DC072;
+    }
+}

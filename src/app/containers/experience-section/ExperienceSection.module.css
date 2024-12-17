@@ -22,7 +22,11 @@
 
 @media screen and (max-width: 1170px) {
     .Reviews {
-        gap: 7rem;
+        padding: 0 10px;
+        gap: 6rem;
+    }
+    .ExperienceSection > :nth-child(2) {
+        padding: 0 10px;
     }
 }
 

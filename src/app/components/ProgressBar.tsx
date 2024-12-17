@@ -1,14 +1,21 @@
 import styles from "./ProgressBar.module.css";
 
 interface ProgressBarProps {
-  label: string;
+  label?: string;
   value: number;
+  rounded: boolean;
 }
 
-export default function ProgressBar({ label, value }: ProgressBarProps) {
+export default function ProgressBar({
+  label,
+  value,
+  rounded,
+}: ProgressBarProps) {
   return (
-    <div className={styles.ProgressContainer}>
-      <h4>{label}</h4>
+    <div
+      className={`${styles.ProgressContainer} ${rounded ? styles.Rounded : ""}`}
+    >
+      {label && <h4>{label}</h4>}
       <div className={styles.ProgressBar}>
         <div
           className={styles.ProgressFill}
