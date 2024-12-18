@@ -71,7 +71,7 @@
 /* mobile responsive */
 .TestimonialsSection.tablet,
 .TestimonialsSection.mobile {
-    .TestimonalsSectionContent {
+    .TestimonialsSectionContent {
         position: absolute;
         transform: translateX(initial);
         transform: translateX(-400px);
@@ -85,7 +85,7 @@
 }
 
 @media screen and (max-width: 1380px) {
-    .TestimonalsSectionContent {
+    .TestimonialsSectionContent {
         position: absolute;
         top: 50px;
         .Title {

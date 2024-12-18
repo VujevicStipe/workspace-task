@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background-color: var(--background);
+  background-color: var(--background) !important;
 
   display: -webkit-flex;
   display: -ms-flexbox;
