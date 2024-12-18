@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, ReactNode } from "react";
+import React, { useState, ReactNode, useEffect, useRef } from "react";
 import styles from "./Accordion.module.css";
 import chevronDown from "@/public/chevron-down.svg";
 import chevronUp from "@/public/chevron-up.svg";
@@ -27,12 +27,28 @@ interface AccordionProps {
 
 export default function Accordion({ items }: AccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   const deviceType = useDeviceType()
+
+  useEffect(() => {
+    const handleResize = () => {
+      contentRefs.current.forEach((ref, index) => {
+        if (ref) {
+          ref.style.maxHeight =
+            openIndex === index ? `${ref.scrollHeight}px` : "0px";
+        }
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [openIndex]);
 
   return (
     <div>
@@ -49,13 +65,19 @@ export default function Accordion({ items }: AccordionProps) {
               className={styles.accordionIcon}
             />
           </div>
-          {openIndex === index && (
-            <div className={`${styles.accordionContent} ${styles[deviceType]}`}>
-              <Image
-                className={styles.accordionImage}
-                src={item.image}
-                alt="image"
-              />
+          <div
+            ref={(el) => {
+              contentRefs.current[index] = el;
+            }}
+            className={`${styles.accordionContent} ${
+              openIndex === index ? styles.open : ""
+            } ${styles[deviceType]}`}
+          >
+            <Image
+              className={styles.accordionImage}
+              src={item.image}
+              alt="image"
+            />
               <div className={styles.progressBarWrapper}>
                 <div className={styles.col1}>
                   <ProgressBar
@@ -117,7 +139,6 @@ export default function Accordion({ items }: AccordionProps) {
                 </div>
               </div>
             </div>
-          )}
         </div>
       ))}
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./RouteHighlightsCard.module.css";
 import Image, { StaticImageData } from "next/image";
+import chevron from '@/public/chevron.svg'
 
 interface RouteHighlightsCardProps {
   title: string;
