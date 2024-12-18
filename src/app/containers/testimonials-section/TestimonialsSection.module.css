@@ -1,4 +1,4 @@
-.TestimonalsSection {
+.TestimonialsSection {
     width: 100%;
     height: 796px;
     position: relative;
@@ -6,7 +6,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    .TestimonalsSectionContent {
+    .TestimonialsSectionContent {
         width: fit-content;
         height: 100%;
         display: flex;
@@ -15,7 +15,7 @@
         align-items: flex-start;
         gap: 55px;
         position: relative;
-        left: 300px;
+        left: 420px;
         z-index: 1;
         padding: 164px 15px 157px 15px;
         color: var(--blue-color);
@@ -24,7 +24,7 @@
             width: 100%;
         }
     }
-    .TestimonalsSectionContent h2 {
+    .TestimonialsSectionContent h2 {
         font-size: 36px;
         font-style: normal;
         font-weight: 400;
@@ -69,11 +69,12 @@
 }
 
 /* mobile responsive */
-.TestimonalsSection.tablet,
-.TestimonalsSection.mobile {
+.TestimonialsSection.tablet,
+.TestimonialsSection.mobile {
     .TestimonalsSectionContent {
         position: absolute;
         transform: translateX(initial);
+        transform: translateX(-400px);
         right: 0;
         top: 50px;
         .Title {
@@ -83,10 +84,9 @@
     }
 }
 
-@media screen and (max-width: 1713px) {
+@media screen and (max-width: 1380px) {
     .TestimonalsSectionContent {
         position: absolute;
-        transform: translateX(-300px);
         top: 50px;
         .Title {
             position: absolute;

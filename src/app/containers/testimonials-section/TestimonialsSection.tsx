@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "./TestimonalsSection.module.css";
+import styles from "./TestimonialsSection.module.css";
 import Image from "next/image";
-import TestimonalCard from "@/app/components/cards/TestimonalCard";
+import TestimonialCard from "@/app/components/cards/TestimonialCard";
 import useDeviceType from "../../hooks/useWindowSize";
 import bg from "@/public/testimonals_bg.png";
 import avatar from "@/public/avatar.png";
@@ -38,12 +38,11 @@ const testimonials = [
     image: avatar,
     username: "Lisa Alex",
     rating: 4,
-    comment:
-      "Vivamus cursus orci eget dolor euismod",
+    comment: "Vivamus cursus orci eget dolor euismod",
   },
 ];
 
-export default function TestimonalsSection() {
+export default function TestimonialsSection() {
   const [index, setIndex] = useState(0);
   const deviceType = useDeviceType();
 
@@ -55,8 +54,8 @@ export default function TestimonalsSection() {
   }, []);
 
   return (
-    <div className={`${styles.TestimonalsSection} ${styles[deviceType]}`}>
-      <div className={styles.TestimonalsSectionContent}>
+    <div className={`${styles.TestimonialsSection} ${styles[deviceType]}`}>
+      <div className={styles.TestimonialsSectionContent}>
         <h2 className={styles.Title}>Our guests love it</h2>
         <div className={styles.Wrapper}>
           <motion.div
@@ -66,7 +65,7 @@ export default function TestimonalsSection() {
           >
             {testimonials.map((testimonial, i) => (
               <div key={i} className={styles.SliderCard}>
-                <TestimonalCard
+                <TestimonialCard
                   title={testimonial.title}
                   image={testimonial.image}
                   username={testimonial.username}

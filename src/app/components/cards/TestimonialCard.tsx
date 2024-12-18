@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./TestimonalCard.module.css";
+import styles from "./TestimonialCard.module.css";
 import Image, { StaticImageData } from "next/image";
 import useDeviceType from "../../hooks/useWindowSize";
 import RatingStars from "../RatingStars";
@@ -12,7 +12,7 @@ interface TestimonalCardProps {
   comment: string;
 }
 
-export default function TestimonalCard({
+export default function TestimonialCard({
   title,
   image,
   username,
