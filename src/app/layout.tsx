@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Poppins } from "next/font/google";
 import "./styles/globals.css";
 import { usePathname } from "next/navigation";
@@ -22,6 +22,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <title>Charterag</title>
+      </head>
       <body className={`${poppins.variable}`}>
         <header className="headerStyles">
           <Navbar variant={navbarVariant} />
