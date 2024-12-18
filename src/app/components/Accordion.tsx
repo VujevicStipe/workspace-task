@@ -33,7 +33,7 @@ export default function Accordion({ items }: AccordionProps) {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const deviceType = useDeviceType()
+  const deviceType = useDeviceType();
 
   useEffect(() => {
     const handleResize = () => {
@@ -78,67 +78,67 @@ export default function Accordion({ items }: AccordionProps) {
               src={item.image}
               alt="image"
             />
-              <div className={styles.progressBarWrapper}>
-                <div className={styles.col1}>
-                  <ProgressBar
-                    label="Organised parties"
-                    value={item.perk1}
-                    rounded={true}
-                    direction="col"
-                  />
-                  <ProgressBar
-                    label="Sailweek Regatta"
-                    value={item.perk2}
-                    rounded={true}
-                    direction="col"
-                  />
-                  <ProgressBar
-                    label="Swim Stops"
-                    value={item.perk3}
-                    rounded={true}
-                    direction="col"
-                  />
-                  <ProgressBar
-                    label="Sightseeing"
-                    value={item.perk4}
-                    rounded={true}
-                    direction="col"
-                  />
-                  <ProgressBar
-                    label="Local cuisine"
-                    value={item.perk5}
-                    rounded={true}
-                    direction="col"
-                  />
-                </div>
-                <div className={styles.col2}>
-                  <ProgressBar
-                    label="Wine tasting"
-                    value={item.perk6}
-                    rounded={true}
-                    direction="col"
-                  />
-                  <ProgressBar
-                    label="Island hopping"
-                    value={item.perk7}
-                    rounded={true}
-                    direction="col"
-                  />
-                  <ProgressBar
-                    label="Exploring cities"
-                    value={item.perk8}
-                    rounded={true}
-                    direction="col"
-                  />
-                  <ProgressBar
-                    label="Cliff jumping"
-                    value={item.perk9}
-                    rounded={true}
-                    direction="col"
-                  />
-                </div>
+            <div className={styles.progressBarWrapper}>
+              <div className={styles.col1}>
+                <ProgressBar
+                  label="Organised parties"
+                  value={item.perk1}
+                  rounded={true}
+                  direction="col"
+                />
+                <ProgressBar
+                  label="Sailweek Regatta"
+                  value={item.perk2}
+                  rounded={true}
+                  direction="col"
+                />
+                <ProgressBar
+                  label="Swim Stops"
+                  value={item.perk3}
+                  rounded={true}
+                  direction="col"
+                />
+                <ProgressBar
+                  label="Sightseeing"
+                  value={item.perk4}
+                  rounded={true}
+                  direction="col"
+                />
+                <ProgressBar
+                  label="Local cuisine"
+                  value={item.perk5}
+                  rounded={true}
+                  direction="col"
+                />
+              </div>
+              <div className={styles.col2}>
+                <ProgressBar
+                  label="Wine tasting"
+                  value={item.perk6}
+                  rounded={true}
+                  direction="col"
+                />
+                <ProgressBar
+                  label="Island hopping"
+                  value={item.perk7}
+                  rounded={true}
+                  direction="col"
+                />
+                <ProgressBar
+                  label="Exploring cities"
+                  value={item.perk8}
+                  rounded={true}
+                  direction="col"
+                />
+                <ProgressBar
+                  label="Cliff jumping"
+                  value={item.perk9}
+                  rounded={true}
+                  direction="col"
+                />
               </div>
             </div>
+          </div>
         </div>
       ))}
     </div>

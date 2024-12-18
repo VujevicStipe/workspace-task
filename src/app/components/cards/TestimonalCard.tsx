@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./TestimonalCard.module.css";
 import Image, { StaticImageData } from "next/image";
 import useDeviceType from "../../hooks/useWindowSize";
+import RatingStars from "../RatingStars";
 
 interface TestimonalCardProps {
   image: StaticImageData;
@@ -24,7 +25,7 @@ export default function TestimonalCard({
       <div className={styles.TestimonalCardContent}>
         <Image src={image} alt="profile" />
         <h3>{username}</h3>
-        {/* rating stars */}
+        <RatingStars rating={rating} />
         <h2>{title}</h2>
         <p>{comment}</p>
       </div>

@@ -6,7 +6,7 @@ import TestimonalCard from "@/app/components/cards/TestimonalCard";
 import useDeviceType from "../../hooks/useWindowSize";
 import bg from "@/public/testimonals_bg.png";
 import avatar from "@/public/avatar.png";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -21,18 +21,26 @@ const testimonials = [
     title: "Amazing experience",
     image: avatar,
     username: "Alice Henry",
-    rating: 5,
+    rating: 4,
     comment:
-      "Lorem ipsum dolor sit amet consectetur. Sapien eget morbi aliquam ultricies est ornare. Eu ac lorem eleifend diam tellus magnis volutpat nulla.",
+      "Sapien eget morbi aliquam ultricies est ornare. Eu ac lorem eleifend diam tellus magnis volutpat nulla.",
   },
   {
     title: "Great stuff",
     image: avatar,
     username: "Mate Neeson",
-    rating: 5,
+    rating: 3,
     comment:
       "Vivamus cursus orci eget dolor euismod, nec ultricies ligula aliquam.",
-  }
+  },
+  {
+    title: "Amazing Destination",
+    image: avatar,
+    username: "Lisa Alex",
+    rating: 4,
+    comment:
+      "Vivamus cursus orci eget dolor euismod",
+  },
 ];
 
 export default function TestimonalsSection() {
@@ -42,7 +50,7 @@ export default function TestimonalsSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -56,7 +64,7 @@ export default function TestimonalsSection() {
             animate={{ x: `-${index * 33.75}rem` }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
           >
-            {testimonials.concat(testimonials).map((testimonial, i) => (
+            {testimonials.map((testimonial, i) => (
               <div key={i} className={styles.SliderCard}>
                 <TestimonalCard
                   title={testimonial.title}

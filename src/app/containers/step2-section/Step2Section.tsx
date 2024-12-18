@@ -20,7 +20,7 @@ export default function Step2Section() {
           mainTitle="Solo, Cabin or Group of Friends"
           mainP="Solo, with a friend or with the whole crew, we got it all covered! Lorem ipsum dolor sit amet consectetur. Tellus lectus non purus odio amet fermentum eu morbi id. Risus sed facilisis maecenas urna nunc."
           buttonData="compare cabins"
-          image={img1}
+          image={[img1, img2, img3]}
           subTitle="Solo"
           subP="Book a single spot and share a bunk bed cabin with a person of the same gender. We have a lot of single travelers just like you. "
         />
@@ -29,7 +29,7 @@ export default function Step2Section() {
           mainTitle="Catamaran or Monohull"
           mainP="Lorem ipsum dolor sit amet consectetur. Tellus lectus non purus odio amet fermentum eu morbi id. Risus sed facilisis maecenas urna nunc."
           buttonData="compare yachts"
-          image={img2}
+          image={[img2, img3, img1]}
           subTitle="Catamaran"
           subP="Twin hulled boat - for those who travel in style"
         />
@@ -38,7 +38,7 @@ export default function Step2Section() {
           mainTitle="Skipper and Host"
           mainP="Lorem ipsum dolor sit amet consectetur. Tellus lectus non purus odio amet fermentum eu morbi id. Risus sed facilisis maecenas urna nunc."
           buttonData="about us"
-          image={img3}
+          image={[img3, img1, img2]}
           subTitle="Skipper"
           subP="Lorem ipsum dolor sit amet consectetur"
         />
