@@ -4,17 +4,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
 
-    h4 {
-        min-width: 60px; 
-        font-size: 16px;
-        text-align: start;
-        text-transform: capitalize;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 100%;
-        color: white;
-    }
+.ProgressContainer h4 {
+    min-width: 60px; 
+    font-size: 16px;
+    text-align: start;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    color: white;
 }
 
 .ProgressBar {
@@ -57,15 +57,16 @@
     align-items: flex-start;
     width: 189.836px;
 
-    h4 {
-        color: #062949;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20.507px;
-        margin-bottom: 5.52px;
-    }
     .ProgressBar {
         height: 6.946px;
     }
+}
+
+.ProgressContainer.col h4 {
+    color: #062949;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.507px;
+    margin-bottom: 5.52px;
 }

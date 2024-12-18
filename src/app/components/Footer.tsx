@@ -35,40 +35,40 @@ export default function Footer() {
         <div className={styles.footerLinks}>
           <ul>
             <li className={styles.linkHead}>Programs</li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Program 1</Link>
             </li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Program 2</Link>
             </li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Program 3</Link>
             </li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Program 4</Link>
             </li>
           </ul>
           <ul>
             <li className={styles.linkHead}>Find out more</li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Link 1</Link>
             </li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Link 2</Link>
             </li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Link 3</Link>
             </li>
           </ul>
           <ul>
             <li className={styles.linkHead}>Charterag</li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Link 1</Link>
             </li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Link 2</Link>
             </li>
-            <li>
+            <li className={styles.link}>
               <Link href="">Link 3</Link>
             </li>
           </ul>

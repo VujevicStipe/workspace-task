@@ -63,11 +63,11 @@
     letter-spacing: 1.22px;
     line-height: 24px;
     gap: 12px;
+}
 
-    span {
-        display: flex;
-        align-items: center;
-    }
+.tertiary span {
+    display: flex;
+    align-items: center;
 }
 
 .tertiary.white:hover {
