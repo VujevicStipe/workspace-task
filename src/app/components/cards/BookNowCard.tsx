@@ -49,7 +49,7 @@ export default function BookNowCard({
           </h3>
         </div>
       </div>
-      <ul>
+      <ul className={styles.icons}>
         <li>
           <Image src={boatIcon} alt="boat-icon" />
           {vibe} vibe

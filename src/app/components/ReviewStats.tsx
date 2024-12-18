@@ -34,9 +34,9 @@ export default function ReviewStats({
   };
 
   return (
-    <div className={Styles.ReviewStasts}>
+    <div className={`${Styles.ReviewStats} ${inter.className}`}>
       <Image src={getIcon()} alt={`${variant} icon`} />
-      <div className={Styles.ReviewStastsContent}>
+      <div className={Styles.ReviewStatsContent}>
         <h2>{title}</h2>
         <p>{subTitle}</p>
       </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, ReactNode, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Accordion.module.css";
 import chevronDown from "@/public/chevron-down.svg";
 import chevronUp from "@/public/chevron-up.svg";

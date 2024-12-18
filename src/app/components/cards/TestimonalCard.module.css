@@ -19,24 +19,23 @@
         text-align: start;
         font-style: normal;
         color: var(--blue-color);
-
-        h2 {
-            font-size: 22px;
-            font-weight: 500;
-            line-height: 33px;
-        }
-        p {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 25px;
-        }
-        h3 {
-            font-size: 14px;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: 0.2px;
-            text-transform: capitalize;
-        }
+    }
+    .TestimonalCardContent h2 {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 33px;
+    }
+    .TestimonalCardContent p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .TestimonalCardContent h3 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
     }
 }
 

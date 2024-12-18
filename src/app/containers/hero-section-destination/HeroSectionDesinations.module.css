@@ -37,22 +37,21 @@
                 position: absolute;
                 bottom: 56;
                 z-index: 1;
-
-                h1 {
-                    font-size: 40px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 60px;
-                    text-align: start;
-                }
-                h2 {
-                    font-size: 15px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    letter-spacing: 1px;
-                    text-transform: uppercase;
-                }
+            }
+            .heroImageText h1 {
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 60px;
+                text-align: start;
+            }
+            .heroImageText h2 {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1px;
+                text-transform: uppercase;
             }
         }
         .heroWrapper2 {
@@ -70,15 +69,15 @@
                 right: 0;
                 z-index: 3;
             }
-            p {
-                text-align: start;
-                color: var(--blue-color);
-                max-width: 580px;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 28px;
-            }
+        }
+        .heroWrapper2 p {
+            text-align: start;
+            color: var(--blue-color);
+            max-width: 580px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
         }
     }
     & > *:last-child {

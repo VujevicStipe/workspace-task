@@ -12,16 +12,16 @@
   width: 105%;
   height: 100%;
   object-fit: cover;
+}
 
-  video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-height: 100vh;
-    min-width: 100%;
-    object-fit: cover;
-  }
+.heroVideo video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  min-width: 100%;
+  object-fit: cover;
 }
   
 .heroContent {
@@ -37,38 +37,37 @@
   pointer-events: none;
   color: white;
   z-index: 1;
+}
 
-  
-  h1{
-    font-weight: 900;
-    font-size: 7.25rem;
-    text-transform: uppercase;
-    line-height: 109%;
-    letter-spacing: -2.32px;
-  }
-  span {
-    margin: 0 7.533px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 150%;
+.heroContent h1{
+  font-weight: 900;
+  font-size: 7.25rem;
+  text-transform: uppercase;
+  line-height: 109%;
+  letter-spacing: -2.32px;
+}
+.heroContent span {
+  margin: 0 7.533px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
 
-    & > *{
-      vertical-align: middle;
-    }
+  & > *{
+    vertical-align: middle;
   }
-  p {
-    font-size: 18;
-    font-weight: 400;
-  }
+}
+.heroContent p {
+  font-size: 18;
+  font-weight: 400;
 }
 
 /* tablet responsive */
 .hero.tablet {
   .heroContent {
     padding: 0 10px;
-    h1 {
-      font-size: 5.5rem;
-    }
+  }
+  .heroContent h1 {
+    font-size: 5.5rem;
   }
 }
 
@@ -76,8 +75,8 @@
 .hero.mobile {
   .heroContent {
     padding: 0 10px;
-    h1 {
-      font-size: 3.5rem;
-    }
+  }
+  .heroContent h1 {
+    font-size: 3.5rem;
   }
 }

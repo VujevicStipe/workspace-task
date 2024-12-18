@@ -114,14 +114,13 @@
 .footerTerms {
     display: flex;
     gap: 4.3rem;
-
-    a {
-        min-width: 100px;
-        text-align: start;
-    }
-    span:hover {
-        opacity: 1;
-    }
+}
+.footerTerms a {
+    min-width: 100px;
+    text-align: start;
+}
+.footerTerms span:hover {
+    opacity: 1;
 }
 
 /* tablet responsive */

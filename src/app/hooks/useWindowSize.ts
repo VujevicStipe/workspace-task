@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import { WiDayCloudy } from "react-icons/wi";
 
 type WindowSize = {
   width: number | undefined;

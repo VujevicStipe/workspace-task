@@ -18,18 +18,18 @@
         top: 17.74px;
         left: 27px;
     
-        h2 {
-            text-transform: capitalize;
-            color: white;
-            font-size: 26px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 120%;
-        }
         .Icon {
             opacity: 0;
             transition: opacity 0.2s ease-in, transform 0.2s ease-in;
         }
+    }
+    .Title h2 {
+        text-transform: capitalize;
+        color: white;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
     }
 
     .Image {

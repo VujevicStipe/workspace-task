@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React from "react";
 import styles from "./OfferCard.module.css";
 import useDeviceType from "@/app/hooks/useWindowSize";
 import Image from "next/image";
