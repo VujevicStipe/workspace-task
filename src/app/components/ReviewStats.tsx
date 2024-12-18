@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./ReviewStats.module.css";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import star from "@/public/star.svg";
 import facebook from "@/public/facebook.svg";
 import google from "@/public/google.svg";

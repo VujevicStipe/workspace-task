@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./DiscountSection.module.css";
 import DiscountCard from "@/app/components/cards/DiscountCard";
-import { Open_Sans } from "@next/font/google";
+import { Open_Sans } from "next/font/google";
 import texture from "@/public/discount_texture.svg";
 import Image from "next/image";
 
