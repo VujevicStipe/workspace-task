@@ -1,0 +1,65 @@
+.closingCtaSection {
+    width: 100%;
+    height: 796px;
+    margin-bottom: 143px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: var(--blue-color);
+
+    .background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 1143px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        top: -150px;
+        right: -30px;
+    }
+    .content {
+        width: 100%;
+        max-width: 415px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 22px;
+        text-align: start;
+        position: relative;
+
+        & > *:last-child {
+            margin-top: 21px;
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .wrapper {
+        position: initial !important;
+        justify-content: center !important;
+        padding: 0 10px !important;
+        .content {
+            border-radius: 10px;
+            padding: 20px 30px;
+            background-color: white;
+        }
+    }
+}
+@media screen and (max-width: 1250px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}

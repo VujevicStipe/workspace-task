@@ -6,9 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 42px 44px 40px;
+    padding: 50px 40px 44px 40px;
     margin: 0 auto;
-    color: white;
 }
 
 .navLinks {
@@ -26,7 +25,7 @@
 .navLinks li {
     font-weight: 400;
     font-size: 16;
-    color: white;
+    color: inherit;
 }
 
 .authLinks {
@@ -38,7 +37,7 @@
 .authLinks .login {
     font-weight: 700;
     font-size: 16;
-    color: white;
+    color: inherit;
 }
 
 @media (max-width: 1250px) {
@@ -50,4 +49,16 @@
     .navBarStyles {
         flex-wrap: wrap;
     }
+}
+@media (min-width: 1440px) {
+    .navBarStyles {
+        padding: 50px 0 44px 0;
+    }
+}
+
+.blue {
+    color: var(--blue-color);
+}
+.white {
+    color: white;
 }

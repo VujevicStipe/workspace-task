@@ -62,14 +62,6 @@
   }
 }
 
-.shadow {
-  position: absolute;
-  bottom: 0;
-  height: 189px;
-  width: 100%;
-  background: linear-gradient(1deg, #062949 5.32%, rgba(6, 41, 73, 0.00) 90.36%);
-}
-
 /* tablet responsive */
 .hero.tablet {
   .heroContent {

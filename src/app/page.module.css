@@ -2,7 +2,3 @@
   display: flex;
   flex-direction: column;
 }
-
-/* import styles from "./HeroSection.module.css";
-import Image from "next/image";
-import softStar from "../../public/soft_star.svg"; */

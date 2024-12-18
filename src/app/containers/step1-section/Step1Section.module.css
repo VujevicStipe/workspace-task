@@ -1,0 +1,14 @@
+.step1Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* max-width:  1010px accordion */
+    .accordion {
+        width: 100%;
+        max-width: 1010px;
+        padding: 0 15px;
+        margin-bottom: 69.5px;
+    }
+}

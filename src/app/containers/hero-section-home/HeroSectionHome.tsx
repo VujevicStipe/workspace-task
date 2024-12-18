@@ -1,7 +1,7 @@
 import React from "react";
+import styles from "./HeroSectionHome.module.css";
 import Image from "next/image";
 import useDeviceType from "@/app/hooks/useWindowSize";
-import styles from "./HeroSectionHome.module.css";
 import softStar from "@/public/soft_star.svg";
 
 export default function HeroSectionHome() {
@@ -42,7 +42,7 @@ export default function HeroSectionHome() {
           </span>{" "}
           dance
         </p>
-        <div className={styles.shadow}></div>
+        <div className="hero-shadow"></div>
       </div>
     </div>
   );

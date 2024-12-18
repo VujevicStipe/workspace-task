@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+'use client'
 import { Poppins } from "next/font/google";
 import "./styles/globals.css";
+import { usePathname } from "next/navigation";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -16,11 +17,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+  const navbarVariant = pathname === "/destination" ? "blue" : "white";
+
   return (
     <html lang="en">
       <body className={`${poppins.variable}`}>
         <header className="headerStyles">
-          <Navbar />
+          <Navbar variant={navbarVariant} />
         </header>
         {children}
         <div className="footerStyles">

@@ -1,0 +1,22 @@
+.step2Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .featuresWrapper {
+        width: 100%;
+        max-width: 1110px;
+        margin-top: 26.35px;
+        margin-bottom: 13.5px;
+        display: flex;
+        flex-direction: column;
+        gap: 222px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .featuresWrapper {
+        padding: 0 15px;
+    }
+}

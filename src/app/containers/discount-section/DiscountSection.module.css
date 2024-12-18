@@ -7,16 +7,6 @@
     padding: 93px 10px 29px 10px;
     background-color: var(--blue-color);
 
-    .DiscountCardsWrapper {
-        width: fit-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 64px;
-        margin: 115px 0;
-    }
     h2 {
         color: white;
         font-size: 46px;

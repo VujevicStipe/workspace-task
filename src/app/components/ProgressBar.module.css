@@ -50,3 +50,22 @@
         background-color: #1DC072;
     }
 }
+
+.ProgressContainer.col {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 189.836px;
+
+    h4 {
+        color: #062949;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.507px;
+        margin-bottom: 5.52px;
+    }
+    .ProgressBar {
+        height: 6.946px;
+    }
+}

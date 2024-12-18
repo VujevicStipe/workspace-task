@@ -1,5 +1,4 @@
 :root {
-
   /* colors */
   --background: #ECFBFF;
   --foreground: #171717;
@@ -84,4 +83,24 @@ li {
   background-color: var(--blue-color);
   display: flex;
   justify-content: center;
+}
+
+/* hero shadow */
+.hero-shadow {
+  position: absolute;
+  bottom: 0;
+  height: 189px;
+  width: 100%;
+  background: linear-gradient(1deg, #062949 5.32%, rgba(6, 41, 73, 0.00) 90.36%);
+}
+
+.DiscountCardsWrapper {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 64px;
+  margin: 115px 0;
 }

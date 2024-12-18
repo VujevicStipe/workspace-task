@@ -1,0 +1,114 @@
+.featureCard {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    color: var(--blue-color);
+}
+  
+.wrapper {
+    width: 100%;
+    max-width: 555px;
+    height: fit-content;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .imageText {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+
+        h3 {
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%; 
+        }
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21.699px;
+        }
+    }
+    .imageWrapper {
+        width: 100%;
+        height: 500px;
+        border-radius: inherit;
+        position: relative;
+
+        & > *:first-child {
+            position: absolute;
+            left: 32px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            cursor: pointer;
+        }
+        & > *:nth-child(2) {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+        & > *:last-child {
+            position: absolute;
+            right: 32px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            cursor: pointer;
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    max-width: 458.118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    top: -17px;
+    text-align: start;
+
+    & > *:last-child {
+        margin-top: 26px;
+    }
+    h2 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 46px;
+    }
+    p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+
+.left {
+    flex-direction: row;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+/* tablet responsive */
+
+.featureCard.tablet,
+.featureCard.mobile {
+    flex-direction: column;
+}
+  

@@ -14,7 +14,7 @@ export default function DiscountSection() {
   return (
     <div className={styles.DiscountSection}>
       <h2>Flexible payment</h2>
-      <div className={styles.DiscountCardsWrapper}>
+      <div className="DiscountCardsWrapper">
         <DiscountCard
           variant={1}
           color="white"

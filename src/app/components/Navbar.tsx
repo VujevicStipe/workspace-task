@@ -4,16 +4,23 @@ import Image from "next/image";
 import styles from "./Navbar.module.css";
 import useDeviceType from "../hooks/useWindowSize";
 import { FaBars } from "react-icons/fa";
-import Logo from "@/public/logo.svg";
+import LogoWhite from "@/public/logo.svg";
+import LogoBlue from "@/public/blue_logo.svg";
 import Button from "./Button";
 
-export default function Navbar() {
+interface NavBarProps {
+  variant: "blue" | "white";
+}
+
+export default function Navbar({ variant }: NavBarProps) {
   const deviceType = useDeviceType();
 
   return (
-    <nav className={`${styles.navBarStyles} ${styles[deviceType]}`}>
+    <nav
+      className={`${styles.navBarStyles} ${styles[deviceType]} ${styles[variant]}`}
+    >
       <Link href="/">
-        <Image src={Logo} alt="" />
+        <Image src={variant === "white" ? LogoWhite : LogoBlue} alt="logo" />
       </Link>
       {deviceType === "desktop" ? (
         <>
@@ -43,7 +50,9 @@ export default function Navbar() {
             </Button>
           </ul>
         </>
-      ) : <FaBars/>}
+      ) : (
+        <FaBars />
+      )}
     </nav>
   );
 }
