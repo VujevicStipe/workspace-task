@@ -1,6 +1,7 @@
 .TestimonalCard {
     display: inline-flex;
-    width: 31.25rem;
+    width: 100%;
+    max-width: 31.25rem;
     height: 337px;
     padding: 42px 76px 42px 30px;
     align-items: center;
@@ -41,5 +42,5 @@
 
 /* mobile responsive */
 .TestimonalCard.mobile {
-    width: 24rem;
+    width: 100%;
 }

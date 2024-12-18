@@ -11,13 +11,18 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         gap: 55px;
         position: relative;
-        left: 460px;
+        left: 300px;
         z-index: 1;
-        padding: 164px 0 157px 0;
+        padding: 164px 15px 157px 15px;
         color: var(--blue-color);
 
+        & > * {
+            width: 100%;
+        }
         h2 {
             font-size: 36px;
             font-style: normal;
@@ -39,14 +44,37 @@
         display: flex;
         flex-direction: row;
         gap: 27px;
+        position: relative;
+        width: 100%;
+        max-width: 1027px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
 }
 
+.SliderContainer {
+    display: flex;
+    gap: 2.5rem; 
+    transition: transform 0.8s ease-in-out;
+}
+
+.SliderCard {
+    flex: 0 0 31.25rem;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 /* mobile responsive */
+.TestimonalsSection.tablet,
 .TestimonalsSection.mobile {
     .TestimonalsSectionContent {
         position: absolute;
-        left: 10px;
+        transform: translateX(initial);
+        right: 0;
         top: 50px;
         .Title {
             position: absolute;
@@ -55,10 +83,10 @@
     }
 }
 
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1713px) {
     .TestimonalsSectionContent {
         position: absolute;
-        left: 10px;
+        transform: translateX(-300px);
         top: 50px;
         .Title {
             position: absolute;
